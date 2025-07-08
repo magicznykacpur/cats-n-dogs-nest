@@ -1,15 +1,14 @@
 import {
-  Controller,
-  Get,
   Body,
-  Param,
-  Post,
-  Patch,
+  Controller,
   Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
 } from '@nestjs/common';
-import { CreateCatDto } from './dto/create-cat.dto';
-import { CatDto } from './dto/cat.dto';
 import { CatsService } from './cats.service';
+import { CreateCatDto } from './dto/create-cat.dto';
 import { updateCatDto } from './dto/update-cat.dto';
 import { CatsResponse } from './responses/cats-response';
 

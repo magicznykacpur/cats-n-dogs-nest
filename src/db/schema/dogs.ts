@@ -11,7 +11,7 @@ const timestamps = {
   created_at: timestamp().defaultNow().notNull(),
 };
 
-export const catsTable = pgTable('dogs', {
+export const dogsTable = pgTable('dogs', {
   id: uuid().primaryKey().defaultRandom(),
   name: varchar().notNull(),
   breed: varchar().notNull(),
